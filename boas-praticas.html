@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boas práticas | Acessibilidade no Dia a Dia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+    <header class="cabecalho">
+        <div class="container topo">
+            <a class="nome-site" href="index.html">Acessibilidade no Dia a Dia</a>
+            <div class="controles-acessibilidade" role="group" aria-label="Controles de acessibilidade">
+                <button type="button" id="diminuir-fonte" aria-label="Diminuir tamanho do texto">A-</button>
+                <button type="button" id="aumentar-fonte" aria-label="Aumentar tamanho do texto">A+</button>
+                <button type="button" id="alternar-contraste" aria-pressed="false">Alto contraste</button>
+            </div>
+        </div>
+        <nav class="container" aria-label="Menu principal">
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                <li><a href="barreiras.html">Barreiras</a></li>
+                <li><a href="boas-praticas.html" aria-current="page">Boas práticas</a></li>
+                <li><a href="teste.html">Teste</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="conteudo" class="container" tabindex="-1">
+        <section class="introducao">
+            <h1>Boas práticas de acessibilidade</h1>
+            <p>Uma página mais acessível começa com escolhas simples na organização e na apresentação do conteúdo.</p>
+        </section>
+        <section class="card pratica">
+            <h2>1. Use títulos corretamente</h2>
+            <p>O h1 apresenta o assunto principal. O h2 organiza as seções, e o h3 identifica assuntos dentro delas. Essa sequência ajuda a entender a estrutura da página, inclusive com leitores de tela.</p>
+            <pre><code>&lt;h1&gt;Acessibilidade na Web&lt;/h1&gt;
+&lt;h2&gt;Tecnologia assistiva&lt;/h2&gt;
+&lt;h3&gt;Leitor de tela&lt;/h3&gt;</code></pre>
+        </section>
+        <section class="card pratica">
+            <h2>2. Descreva as imagens</h2>
+            <p>O atributo <code>alt</code> oferece um texto alternativo para a imagem. Imagens que transmitem informação precisam de uma descrição adequada ao contexto.</p>
+            <pre><code>&lt;img src="foto.jpg" alt="Pessoa utilizando um computador"&gt;</code></pre>
+            <p>Se a imagem for apenas decorativa, use <code>alt=""</code> para que ela possa ser ignorada por leitores de tela.</p>
+        </section>
+        <section class="card pratica">
+            <h2>3. Crie links claros</h2>
+            <p>O texto do link deve deixar claro seu destino, mesmo quando for lido fora do parágrafo.</p>
+            <p><strong>Evite:</strong> “Clique aqui”.</p>
+            <p><strong>Prefira:</strong> “Conheça as boas práticas de acessibilidade”.</p>
+        </section>
+        <section class="card pratica">
+            <h2>4. Permita navegação pelo teclado</h2>
+            <p>Use <kbd>Tab</kbd> para avançar entre os controles e <kbd>Shift</kbd> + <kbd>Tab</kbd> para voltar. A tecla <kbd>Enter</kbd> ativa links e botões. A barra de espaço também permite marcar caixas de seleção.</p>
+            <p>Links, botões e campos devem poder ser acessados sem o mouse. O foco visível mostra qual elemento está selecionado para a próxima ação.</p>
+        </section>
+        <section class="card pratica">
+            <h2>5. Cuide do contraste</h2>
+            <p>Deve existir uma boa diferença entre a cor do texto e a cor do fundo. Texto escuro sobre fundo claro, por exemplo, pode facilitar a leitura.</p>
+            <p>Não transmita uma informação somente por uma cor. Ao indicar um erro, inclua uma mensagem explicando o problema, além de qualquer destaque colorido.</p>
+        </section>
+        <section class="card pratica">
+            <h2>6. Use textos simples</h2>
+            <p>Uma escrita direta ajuda as pessoas a compreender o conteúdo. Prefira:</p>
+            <ul>
+                <li>Parágrafos menores.</li>
+                <li>Frases mais curtas.</li>
+                <li>Palavras claras.</li>
+                <li>Listas quando necessário.</li>
+            </ul>
+        </section>
+        <section class="card pratica">
+            <h2>7. Conteúdo multimídia</h2>
+            <p>Vídeos com fala e outros sons importantes devem ter legendas. Uma transcrição apresenta o conteúdo sonoro em texto e também pode ajudar. Informações visuais importantes podem precisar de descrição em áudio.</p>
+            <p>Escolha as alternativas de acordo com o conteúdo, para que as pessoas consigam compreender a informação de diferentes formas.</p>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="container">
+            <p>TDE - Desenvolvimento Web | Engenharia de Software</p>
+        </div>
+    </footer>
+</body>
+</html>
+

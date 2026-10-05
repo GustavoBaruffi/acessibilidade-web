@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início | Acessibilidade no Dia a Dia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+    <header class="cabecalho">
+        <div class="container topo">
+            <a class="nome-site" href="index.html">Acessibilidade no Dia a Dia</a>
+            <div class="controles-acessibilidade" role="group" aria-label="Controles de acessibilidade">
+                <button type="button" id="diminuir-fonte" aria-label="Diminuir tamanho do texto">A-</button>
+                <button type="button" id="aumentar-fonte" aria-label="Aumentar tamanho do texto">A+</button>
+                <button type="button" id="alternar-contraste" aria-pressed="false">Alto contraste</button>
+            </div>
+        </div>
+        <nav class="container" aria-label="Menu principal">
+            <ul class="menu">
+                <li><a href="index.html" aria-current="page">Início</a></li>
+                <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                <li><a href="barreiras.html">Barreiras</a></li>
+                <li><a href="boas-praticas.html">Boas práticas</a></li>
+                <li><a href="teste.html">Teste</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="conteudo" class="container" tabindex="-1">
+        <section class="introducao">
+            <h1>Acessibilidade no Dia a Dia</h1>
+            <p>A acessibilidade ajuda a garantir que todas as pessoas possam utilizar espaços, serviços e tecnologias com autonomia. Na internet, isso significa criar páginas que possam ser compreendidas e utilizadas por diferentes usuários.</p>
+            <p>Este site apresenta alguns conceitos, barreiras e boas práticas relacionadas à acessibilidade digital.</p>
+        </section>
+        <div class="cards">
+            <section class="card">
+                <h2>Entenda a acessibilidade</h2>
+                <p>Veja o que significa acessibilidade e por que ela é importante no ambiente digital.</p>
+                <a href="acessibilidade.html">Conheça o conceito de acessibilidade</a>
+            </section>
+            <section class="card">
+                <h2>Conheça as barreiras</h2>
+                <p>Alguns elementos de uma página podem dificultar ou até impedir a navegação de determinados usuários.</p>
+                <a href="barreiras.html">Conheça algumas barreiras digitais</a>
+            </section>
+            <section class="card">
+                <h2>Boas práticas</h2>
+                <p>Pequenas mudanças no desenvolvimento podem tornar um site mais fácil de utilizar.</p>
+                <a href="boas-praticas.html">Veja boas práticas de acessibilidade</a>
+            </section>
+        </div>
+        <section class="destaque">
+            <h2>Acessibilidade beneficia todos</h2>
+            <p>A acessibilidade beneficia pessoas com deficiência e também ajuda em muitas situações do dia a dia. Textos legíveis e menus claros podem facilitar a navegação de idosos e de pessoas menos experientes com tecnologia.</p>
+            <p>Quem usa um celular com uma tela pequena ou está com uma dificuldade temporária, como um braço imobilizado, também pode se beneficiar. Oferecer diferentes formas de acessar o conteúdo torna a Web mais fácil de usar.</p>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="container">
+            <p>TDE - Desenvolvimento Web | Engenharia de Software</p>
+        </div>
+    </footer>
+</body>
+</html>
+

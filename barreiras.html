@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barreiras | Acessibilidade no Dia a Dia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+    <header class="cabecalho">
+        <div class="container topo">
+            <a class="nome-site" href="index.html">Acessibilidade no Dia a Dia</a>
+            <div class="controles-acessibilidade" role="group" aria-label="Controles de acessibilidade">
+                <button type="button" id="diminuir-fonte" aria-label="Diminuir tamanho do texto">A-</button>
+                <button type="button" id="aumentar-fonte" aria-label="Aumentar tamanho do texto">A+</button>
+                <button type="button" id="alternar-contraste" aria-pressed="false">Alto contraste</button>
+            </div>
+        </div>
+        <nav class="container" aria-label="Menu principal">
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                <li><a href="barreiras.html" aria-current="page">Barreiras</a></li>
+                <li><a href="boas-praticas.html">Boas práticas</a></li>
+                <li><a href="teste.html">Teste</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="conteudo" class="container" tabindex="-1">
+        <section class="introducao">
+            <h1>Barreiras de acessibilidade na Web</h1>
+            <p>Uma página pode funcionar normalmente para uma pessoa e, ao mesmo tempo, apresentar grandes dificuldades para outra. Conhecer essas barreiras ajuda no desenvolvimento de sites mais acessíveis.</p>
+        </section>
+        <div class="cards duas-colunas">
+            <section class="card">
+                <h2>1. Deficiência visual</h2>
+                <p>Pessoas cegas podem utilizar leitores de tela. Sem uma estrutura adequada, parte da informação pode ficar inacessível.</p>
+                <p><strong>Possíveis barreiras:</strong></p>
+                <ul>
+                    <li>Imagens sem descrição.</li>
+                    <li>Links mal descritos.</li>
+                    <li>Funções que dependem apenas do mouse.</li>
+                    <li>Campos de formulário sem identificação.</li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>2. Baixa visão e daltonismo</h2>
+                <p>Algumas pessoas precisam ampliar o conteúdo ou têm dificuldade para distinguir determinadas cores.</p>
+                <p><strong>Possíveis barreiras:</strong></p>
+                <ul>
+                    <li>Pouco contraste.</li>
+                    <li>Textos muito pequenos.</li>
+                    <li>Informações apresentadas somente por cores.</li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>3. Deficiência auditiva</h2>
+                <p>Quem não ouve ou tem dificuldade para ouvir precisa de alternativas visuais ou textuais para conteúdos sonoros.</p>
+                <p><strong>Possíveis barreiras:</strong></p>
+                <ul>
+                    <li>Vídeos sem legenda.</li>
+                    <li>Áudio sem transcrição.</li>
+                    <li>Informações importantes disponíveis somente em áudio.</li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>4. Mobilidade reduzida</h2>
+                <p>Movimentos precisos podem ser difíceis. Algumas pessoas navegam com teclado ou dispositivos adaptados.</p>
+                <p><strong>Possíveis barreiras:</strong></p>
+                <ul>
+                    <li>Funções que não podem ser acessadas pelo teclado.</li>
+                    <li>Botões muito difíceis de selecionar.</li>
+                    <li>Pouco tempo para realizar determinada ação.</li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>5. Dificuldades cognitivas</h2>
+                <p>A forma de apresentar o conteúdo pode dificultar a leitura, a compreensão e a concentração.</p>
+                <p><strong>Possíveis barreiras:</strong></p>
+                <ul>
+                    <li>Textos muito complicados.</li>
+                    <li>Parágrafos enormes.</li>
+                    <li>Organização confusa.</li>
+                    <li>Excesso de elementos que desviam a atenção.</li>
+                </ul>
+            </section>
+        </div>
+        <p class="destaque">Uma Web acessível começa quando pensamos em diferentes formas de utilizar a mesma página.</p>
+    </main>
+    <footer class="rodape">
+        <div class="container">
+            <p>TDE - Desenvolvimento Web | Engenharia de Software</p>
+        </div>
+    </footer>
+</body>
+</html>
+

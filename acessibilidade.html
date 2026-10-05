@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessibilidade | Acessibilidade no Dia a Dia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+    <header class="cabecalho">
+        <div class="container topo">
+            <a class="nome-site" href="index.html">Acessibilidade no Dia a Dia</a>
+            <div class="controles-acessibilidade" role="group" aria-label="Controles de acessibilidade">
+                <button type="button" id="diminuir-fonte" aria-label="Diminuir tamanho do texto">A-</button>
+                <button type="button" id="aumentar-fonte" aria-label="Aumentar tamanho do texto">A+</button>
+                <button type="button" id="alternar-contraste" aria-pressed="false">Alto contraste</button>
+            </div>
+        </div>
+        <nav class="container" aria-label="Menu principal">
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="acessibilidade.html" aria-current="page">Acessibilidade</a></li>
+                <li><a href="barreiras.html">Barreiras</a></li>
+                <li><a href="boas-praticas.html">Boas práticas</a></li>
+                <li><a href="teste.html">Teste</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="conteudo" class="container" tabindex="-1">
+        <section class="introducao">
+            <h1>O que é acessibilidade?</h1>
+            <p>Acessibilidade significa permitir que diferentes pessoas consigam acessar informações e utilizar espaços e serviços com autonomia. É considerar que nem todos enxergam, ouvem, se movimentam ou aprendem da mesma forma.</p>
+        </section>
+        <section>
+            <h2>Acessibilidade no mundo físico e digital</h2>
+            <div class="cards duas-colunas">
+                <div class="card">
+                    <h3>Mundo físico</h3>
+                    <p>Rampas facilitam o acesso a edifícios. O piso tátil ajuda na orientação, e uma sinalização clara facilita a localização de espaços.</p>
+                </div>
+                <div class="card">
+                    <h3>Mundo digital</h3>
+                    <p>Páginas compatíveis com leitores de tela, navegação por teclado, legendas e textos claros permitem diferentes formas de acessar a informação.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Tecnologia assistiva</h2>
+            <p>São recursos e dispositivos que ajudam pessoas com deficiência a realizar atividades com mais autonomia. Conheça alguns exemplos:</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>Leitor de tela</h3>
+                    <p>Transforma informações da tela em fala e auxilia principalmente usuários cegos a navegar e compreender o conteúdo.</p>
+                </div>
+                <div class="card">
+                    <h3>Ampliação de tela</h3>
+                    <p>Aumenta a exibição de textos e outros elementos, ajudando pessoas com baixa visão a visualizar conteúdos.</p>
+                </div>
+                <div class="card">
+                    <h3>Teclados e dispositivos adaptados</h3>
+                    <p>Podem facilitar o uso do computador por pessoas com mobilidade reduzida, de acordo com suas necessidades.</p>
+                </div>
+            </div>
+        </section>
+        <section class="destaque">
+            <h2>Por que isso é importante?</h2>
+            <p>A tecnologia deve facilitar o acesso à informação e não criar novas barreiras. Uma página acessível ajuda mais pessoas a estudar, trabalhar, se comunicar e utilizar serviços com autonomia.</p>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="container">
+            <p>TDE - Desenvolvimento Web | Engenharia de Software</p>
+        </div>
+    </footer>
+</body>
+</html>
+

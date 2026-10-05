@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste | Acessibilidade no Dia a Dia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+    <header class="cabecalho">
+        <div class="container topo">
+            <a class="nome-site" href="index.html">Acessibilidade no Dia a Dia</a>
+            <div class="controles-acessibilidade" role="group" aria-label="Controles de acessibilidade">
+                <button type="button" id="diminuir-fonte" aria-label="Diminuir tamanho do texto">A-</button>
+                <button type="button" id="aumentar-fonte" aria-label="Aumentar tamanho do texto">A+</button>
+                <button type="button" id="alternar-contraste" aria-pressed="false">Alto contraste</button>
+            </div>
+        </div>
+        <nav class="container" aria-label="Menu principal">
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                <li><a href="barreiras.html">Barreiras</a></li>
+                <li><a href="boas-praticas.html">Boas práticas</a></li>
+                <li><a href="teste.html" aria-current="page">Teste</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="conteudo" class="container" tabindex="-1">
+        <section class="introducao">
+            <h1>Teste a acessibilidade do seu site</h1>
+            <p>Marque as práticas que seu site já atende e veja uma avaliação simples.</p>
+        </section>
+        <section class="card">
+            <h2>Checklist de boas práticas</h2>
+            <form id="formulario-teste">
+                <fieldset class="checklist">
+                    <legend>Quais práticas seu site já atende?</legend>
+                    <label for="pratica-1"><input type="checkbox" id="pratica-1" name="praticas" value="1"> <span>As imagens possuem textos alternativos quando necessário.</span></label>
+                    <label for="pratica-2"><input type="checkbox" id="pratica-2" name="praticas" value="2"> <span>O site pode ser utilizado utilizando apenas o teclado.</span></label>
+                    <label for="pratica-3"><input type="checkbox" id="pratica-3" name="praticas" value="3"> <span>Existe um bom contraste entre texto e fundo.</span></label>
+                    <label for="pratica-4"><input type="checkbox" id="pratica-4" name="praticas" value="4"> <span>Os links possuem textos claros e descritivos.</span></label>
+                    <label for="pratica-5"><input type="checkbox" id="pratica-5" name="praticas" value="5"> <span>Os títulos seguem uma ordem lógica.</span></label>
+                    <label for="pratica-6"><input type="checkbox" id="pratica-6" name="praticas" value="6"> <span>Os campos de formulário possuem identificação.</span></label>
+                    <label for="pratica-7"><input type="checkbox" id="pratica-7" name="praticas" value="7"> <span>Vídeos possuem legenda ou alternativa textual quando necessário.</span></label>
+                    <label for="pratica-8"><input type="checkbox" id="pratica-8" name="praticas" value="8"> <span>O conteúdo utiliza linguagem simples e organizada.</span></label>
+                </fieldset>
+                <div class="acoes">
+                    <button type="submit" class="botao-principal">Ver resultado</button>
+                    <button type="reset">Limpar teste</button>
+                </div>
+                <div id="resultado" class="resultado" aria-live="polite" aria-atomic="true"></div>
+            </form>
+            <p class="observacao">Este checklist é uma atividade educativa. Ele ajuda a identificar pontos de atenção, mas não substitui uma avaliação completa de acessibilidade.</p>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="container">
+            <p>TDE - Desenvolvimento Web | Engenharia de Software</p>
+        </div>
+    </footer>
+</body>
+</html>
+
