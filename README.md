@@ -4,6 +4,12 @@ Projeto desenvolvido para a disciplina de Desenvolvimento Web do curso de Engenh
 
 O objetivo é apresentar conceitos de acessibilidade na Web de forma simples e demonstrar algumas dessas práticas na própria aplicação.
 
+## Acesse o projeto
+
+O site está publicado e pode ser acessado em:
+
+https://acessibilidade-web-silk.vercel.app
+
 ## Funcionalidades
 
 - Navegação entre 6 páginas
